@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Filter {
-    protected int treshold;
+    protected int threshold;
 
     public Filter(int f) {
-        this.treshold = f;
+        this.threshold = f;
     }
 
     public List<Integer> filterOut(List<Integer> list) {
         Logger logger = Logger.getInstance();
+
         List<Integer> result = new ArrayList<>();
-        for (int a : list){
-            if (a > treshold){
+        for (int a : list) {
+            if (a > threshold) {
                 result.add(a);
             }
         }

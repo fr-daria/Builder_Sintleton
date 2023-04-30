@@ -13,11 +13,9 @@ public class Person {
         this.city = city;
     }
 
-// public Person( String lastName, int age, String city) {
-//     this.lastName = lastName;
-//     this.age = age;
-//     this.city = city;
-// }
+    public Person(String name, String lastName, String city) {
+        this(name, lastName, 10, city);
+    }
 
     public String getName() {
         return name;
@@ -63,16 +61,15 @@ public class Person {
     }
 
     public PersonBuilder newChildBuilder() {
-
         return new PersonBuilder();
     }
 
     @Override
     public String toString() {
         return "Персона {" + "Имя: " + name +
-                "Фамилия" + lastName +
-                "Возраст:" + age +
-                "Город проживаня" + city
+                " Фамилия: " + lastName +
+                " Возраст:" + age +
+                " Город проживаня: " + city
                 + " }";
     }
 }

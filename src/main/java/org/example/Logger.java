@@ -4,7 +4,7 @@ public class Logger {
     private static Logger logger;
     protected int num = 1;
 
-    public int value;
+    public static int value;
 
     public void log(String msg) {
         System.out.println("[" + num++ + "] " + msg);

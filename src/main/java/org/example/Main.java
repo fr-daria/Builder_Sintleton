@@ -3,14 +3,14 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Person mom = new PersonBuilder()
-                .setName("Анна")
-                .setLastName("Вольф")
+                .setName(" Анна ")
+                .setLastName(" Вольф ")
                 .setAge(31)
-                .setCity("Сидней")
+                .setCity(" Сидней ")
                 .build();
 
         Person son = mom.newChildBuilder()
-                .setName("Антошка")
+                .setName(" Антошка ")
                 .build();
         System.out.println("У " + mom + " есть сын, " + son);
 
