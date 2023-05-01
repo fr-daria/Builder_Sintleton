@@ -10,9 +10,9 @@ public class Main2 {
         int n = scanner.nextInt();
         System.out.println("Введите число отвечающее за верхнюю границу значений элементов");
         int m = scanner.nextInt();
-        
+
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < n; i++) {
             list.add(i, random.nextInt(m));
         }
         System.out.println("Введите число для фильтрации списка");
