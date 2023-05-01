@@ -61,7 +61,12 @@ public class Person {
     }
 
     public PersonBuilder newChildBuilder() {
-        return new PersonBuilder();
+        PersonBuilder person = new PersonBuilder();
+        person.setName(name);
+        person.setLastName(lastName);
+        person.setAge(0);
+        person.setCity(city);
+        return person;
     }
 
     @Override
